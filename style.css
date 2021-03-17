@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+.logo{
+    font-family: papyrus;
+    color: white;
+    margin: 7px;
+    
+}
+.intro{
+    text-align: center;
+    font-size: 40px;
+    margin: 3%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  nav,ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header nav {
+    padding: 0 10%;
+    background: rgba(4, 56, 88, 0.986);
+    
+    
+  }
+ 
+  header nav .main-nav {
+    width: 60%;
+  }
+  .main-nav li a {
+    font-family:  MS UI Gothic ;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+  }
+  .main-nav a:hover {
+    color: #8e8400;
+  }
+ 
+  @media screen and (max-width: 950px) {
+    nav {
+        flex-direction: column;
+        position: relative;
+      }
+      .main-nav {
+        flex-direction: column;
+        margin-bottom: 10px;
+      }
+      .intro {
+        text-align: center;
+        overflow: auto;
+
+      }
+     
+  }
+
+  .intro h1{
+    margin: 150px 0 0 0;
+  font-family: Libre Baskerville;
+    font-size: 4rem;
+    color:  rgb(108, 2, 2);
+  }
+ 
+  .intro p {
+    max-width: 450px;
+    font-family: 'Scriptina';
+    margin: 130px auto;
+    font-size: 1.5rem;
+   color:  rgb(108, 2, 2);
+  }
+  .products{
+    margin-top: 180px;
+    background: rgba(255, 238, 206, 0.612);
+    height: 80%;
+    padding: 25px 25px 25px;
+   
+  }
+
+  /*Menus*/
+
+  .products-container{
+    width: 100%;
+    height: 90%;
+    box-sizing: border-box;
+    padding: 2% 2% 0%;
+  }
+
+  .products-items-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    justify-content: space-around;
+    gap: 4%;
+    padding: 3% 0;
+  }
+  .products-items-container1 {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    justify-content: space-around;
+    gap: 4%;
+    padding: 3% 0;
+  }
+  .products-items-container2 {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    justify-content: space-around;
+    gap: 4%;
+    padding: 3% 0;
+  }
+
+  .img-item-container{
+    cursor: pointer;
+    position: relative;
+    display: block;
+  }
+  .img-container{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .none{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.646);
+  }
+  .img-container img{
+    height: 80%;
+    width: 90%;
+    object-fit: cover;
+  }
+  
+  .img-description{
+  color: rgb(118, 53, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 22px;
+  text-align: center;
+  }
+  .img-description1{
+    color: rgb(118, 53, 0);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 22px;
+    text-align: center;
+    }
+
+    @media screen and (max-width: 850px){
+   
+      .products-container{
+        height: 900px;
+      }
+      .img-description{
+        text-align: center;
+        margin-top: -9%;
+      }
+      .img-description1{
+        text-align: center;
+        margin-top: -2%;
+      }
+      .img-container img{
+        width: 60%;
+        height: 65%;
+        margin-top: 5%;
+        margin-left: 15%;
+      }
+      .products-items-container1{
+        margin-top: 5%;
+      }
+      .products-items-container2{
+        margin-top: 5%;
+      }
+     
+  
+    }
+   
+
+
+  @media screen and (max-width: 550px){
+   
+    .products-container{
+      height: 2200px;
+      margin-top: 5%;
+    }
+    .img-description{
+      margin-top: -9%;
+      margin-left: -20%;
+    }
+    .img-description1{
+      margin-left: -20%;
+      margin-top: 11%;
+    }
+    .img-container img{
+      width: 50%;
+      height: 60%;
+      margin-top: 5%;
+      margin-left: 15%;
+    }
+    .products-items-container p{
+      margin-top: 4%;
+    }
+    .products-items-container img{
+      margin-top: 8%;
+    }
+    .products-items-container{
+      grid-template-columns: minmax(300px, 500px);
+      margin-left: 15%;
+      
+    }
+    .products-items-container1{
+      grid-template-columns: minmax(300px, 500px);
+      margin-left: 15%;
+      margin-top: 15%;
+    }
+    .products-items-container2{
+      grid-template-columns: minmax(300px, 500px);
+      margin-left: 15%;
+      margin-top: 20%;
+    }
+
+  }
+
+
+
+  
+  /*About*/
+
+  .about-section, .products-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .about-container p{
+    font-family: papyrus;
+    color: rgba(4, 56, 88, 0.986);
+    
+
+  }
+  .section-id{
+    padding-top: 10%;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: rgb(118, 53, 0);
+    font-weight: 700;
+  }
+  .about-container{
+    box-sizing: border-box;
+    padding: 5% 10%;
+  }
+  .content-about-location{
+    font-size: 25px;
+  
+  }
+  .content-about-info{
+    font-size: 25px;
+    
+  }
+  
+  .content-about-subtitle{
+    font-size: 20px;
+    margin-top: 5%;
+  }
+  .content-about-description{
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  /*footer*/
+footer{
+  background: rgb(49, 49, 49);
+  width: 100%;
+  height: 40%;
+  padding: 5px;
+}
+footer p{
+  color: rgb(209, 206, 206);
+  text-align: center;
+  font-size: small;
+  font-family: Libre Baskerville;
+}
+
+/*comment*/
+
+.comment-section{
+  background-color: rgba(198, 221, 243, 0.53);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ 
+
+}
+.comment-container{
+  max-width: 700px;
+  padding: 2% 5%;
+  font-family:  MS UI Gothic ;
+  font-weight: bold;
+  color: rgb(118, 53, 0);
+}
+.comment-description{
+  font-size: large;
+  padding: 0 15%;
+  color:rgba(22, 22, 22, 0.632);
+  }
+
+.contact-form{
+  padding: 3% 0;
+  box-sizing: border-box;
+}
+.form-content {
+  box-sizing: border-box;
+  text-align: left;
+}
+.form-content input[type="text"], textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+}
+.form-content input[type="submit"]{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: rgba(4, 56, 88, 0.986);
+}
+
+
+
+
+
+
+  
